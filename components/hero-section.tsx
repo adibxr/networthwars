@@ -3,26 +3,8 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { TrendingUp, BookOpen, Trophy, Users, Sparkles, Zap } from "lucide-react"
-import { useEffect, useState } from "react"
 
 export function HeroSection() {
-  const [displayText, setDisplayText] = useState("")
-  const fullText = "Master Finance the Fun Way"
-
-  useEffect(() => {
-    let i = 0
-    const timer = setInterval(() => {
-      if (i < fullText.length) {
-        setDisplayText(fullText.slice(0, i + 1))
-        i++
-      } else {
-        clearInterval(timer)
-      }
-    }, 100)
-
-    return () => clearInterval(timer)
-  }, [])
-
   return (
     <section className="pt-24 pb-16 px-4 relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
@@ -40,24 +22,17 @@ export function HeroSection() {
       <div className="container mx-auto">
         <div className="text-center max-w-4xl mx-auto">
           <div className="animate-fade-in-scale">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Sparkles className="h-6 w-6 text-primary animate-pulse" />
-              <span className="text-primary font-semibold tracking-wide uppercase text-sm">
-                Founded by Eeshit Mishra
-              </span>
-              <Sparkles className="h-6 w-6 text-primary animate-pulse" />
+            <div className="inline-flex items-center justify-center gap-2 mb-6 px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full">
+              <Sparkles className="h-5 w-5 text-primary animate-pulse" />
+              <span className="text-primary font-semibold tracking-wide text-sm">Founded by Eeshit Mishra</span>
+              <Sparkles className="h-5 w-5 text-primary animate-pulse" />
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold text-balance mb-6 min-h-[1.2em]">
-              <span className="inline-block">
-                {displayText}
-                <span className="animate-pulse text-primary">|</span>
-              </span>
-            </h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-balance mb-6">Master Finance the Fun Way</h1>
 
             <p
               className="text-xl md:text-2xl text-muted-foreground text-pretty mb-8 leading-relaxed animate-slide-in-up"
-              style={{ animationDelay: "3s" }}
+              style={{ animationDelay: "0.5s" }}
             >
               Learn finance through interactive, chapter-based lessons with daily quizzes and hackathons. Join thousands
               of learners building their financial literacy.
@@ -65,13 +40,13 @@ export function HeroSection() {
           </div>
 
           <div
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-in-up"
-            style={{ animationDelay: "3.5s" }}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-in-up p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl max-w-md mx-auto"
+            style={{ animationDelay: "1s" }}
           >
             <Button
               size="lg"
               asChild
-              className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-white hover-lift transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-white hover-lift transition-all duration-300 shadow-lg hover:shadow-xl rounded-2xl"
             >
               <a href="https://join.networthwars.com" target="_blank" rel="noopener noreferrer">
                 <Zap className="mr-2 h-5 w-5" />
@@ -83,7 +58,7 @@ export function HeroSection() {
               size="lg"
               variant="outline"
               asChild
-              className="text-lg px-8 py-6 bg-transparent border-2 border-primary hover:bg-primary hover:text-primary-foreground hover-lift transition-all duration-300"
+              className="text-lg px-8 py-6 bg-transparent border-2 border-primary hover:bg-primary hover:text-primary-foreground hover-lift transition-all duration-300 rounded-2xl"
             >
               <a href="https://docs.networthwars.com" target="_blank" rel="noopener noreferrer">
                 <BookOpen className="mr-2 h-5 w-5" />
@@ -98,39 +73,40 @@ export function HeroSection() {
                 icon: BookOpen,
                 title: "Chapter-Based Learning",
                 description: "Progress through structured finance lessons at your own pace",
-                delay: "4s",
+                delay: "1.5s",
               },
               {
                 icon: Trophy,
                 title: "Daily Quizzes",
                 description: "Test your knowledge with engaging daily challenges",
-                delay: "4.2s",
+                delay: "1.7s",
               },
               {
                 icon: TrendingUp,
                 title: "Hackathons",
                 description: "Compete in finance hackathons and win exciting prizes",
-                delay: "4.4s",
+                delay: "1.9s",
               },
               {
                 icon: Users,
                 title: "Community",
                 description: "Join a vibrant community of finance enthusiasts",
-                delay: "4.6s",
+                delay: "2.1s",
               },
             ].map((feature, index) => (
               <Card
                 key={index}
-                className="p-6 hover-lift bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-primary/20 animate-slide-in-up"
+                className="p-6 hover-lift bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 transition-all duration-300 animate-slide-in-up"
                 style={{ animationDelay: feature.delay }}
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="relative mb-4">
-                    <div className="absolute inset-0 bg-primary/10 rounded-full animate-pulse"></div>
-                    <feature.icon
-                      className="relative h-12 w-12 text-primary animate-float"
-                      style={{ animationDelay: `${index * 0.5}s` }}
-                    />
+                    <div className="bg-primary/10 backdrop-blur-sm p-4 rounded-2xl border border-primary/20">
+                      <feature.icon
+                        className="h-8 w-8 text-primary animate-float"
+                        style={{ animationDelay: `${index * 0.5}s` }}
+                      />
+                    </div>
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm">{feature.description}</p>

@@ -31,7 +31,10 @@ export function TestimonialsSection() {
     <section className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4">
+          <Badge
+            variant="secondary"
+            className="mb-4 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
+          >
             Testimonials
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-balance mb-6">What Our Learners Say</h2>
@@ -42,7 +45,11 @@ export function TestimonialsSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+            /* Updated testimonial cards with glassy rounded design */
+            <Card
+              key={index}
+              className="p-6 hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift"
+            >
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />

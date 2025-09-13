@@ -7,7 +7,10 @@ export function FeaturesSection() {
     <section id="features" className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4">
+          <Badge
+            variant="secondary"
+            className="mb-4 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
+          >
             Features
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-balance mb-6">Why Choose Networthwars?</h2>
@@ -17,9 +20,9 @@ export function FeaturesSection() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <Card className="p-8 hover:shadow-xl transition-all duration-300 bg-card">
+          <Card className="p-8 hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift">
             <div className="flex items-start space-x-4">
-              <div className="bg-primary/10 p-3 rounded-lg">
+              <div className="bg-primary/10 backdrop-blur-sm p-4 rounded-2xl border border-primary/20">
                 <Gamepad2 className="h-8 w-8 text-primary" />
               </div>
               <div>
@@ -32,9 +35,9 @@ export function FeaturesSection() {
             </div>
           </Card>
 
-          <Card className="p-8 hover:shadow-xl transition-all duration-300 bg-card">
+          <Card className="p-8 hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift">
             <div className="flex items-start space-x-4">
-              <div className="bg-primary/10 p-3 rounded-lg">
+              <div className="bg-primary/10 backdrop-blur-sm p-4 rounded-2xl border border-primary/20">
                 <Brain className="h-8 w-8 text-primary" />
               </div>
               <div>
@@ -47,9 +50,9 @@ export function FeaturesSection() {
             </div>
           </Card>
 
-          <Card className="p-8 hover:shadow-xl transition-all duration-300 bg-card">
+          <Card className="p-8 hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift">
             <div className="flex items-start space-x-4">
-              <div className="bg-primary/10 p-3 rounded-lg">
+              <div className="bg-primary/10 backdrop-blur-sm p-4 rounded-2xl border border-primary/20">
                 <Target className="h-8 w-8 text-primary" />
               </div>
               <div>
@@ -62,9 +65,9 @@ export function FeaturesSection() {
             </div>
           </Card>
 
-          <Card className="p-8 hover:shadow-xl transition-all duration-300 bg-card">
+          <Card className="p-8 hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift">
             <div className="flex items-start space-x-4">
-              <div className="bg-primary/10 p-3 rounded-lg">
+              <div className="bg-primary/10 backdrop-blur-sm p-4 rounded-2xl border border-primary/20">
                 <Rocket className="h-8 w-8 text-primary" />
               </div>
               <div>

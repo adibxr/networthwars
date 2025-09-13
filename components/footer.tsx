@@ -9,7 +9,9 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Zap className="h-8 w-8 text-primary" />
+              <div className="bg-primary/10 backdrop-blur-sm p-2 rounded-2xl border border-primary/20">
+                <Zap className="h-6 w-6 text-primary" />
+              </div>
               <span className="text-2xl font-bold">Networthwars</span>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-4">
@@ -19,7 +21,7 @@ export function Footer() {
             <div className="flex space-x-4">
               <a
                 href="mailto:admin@networthwars.com"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors bg-white/10 backdrop-blur-sm p-2 rounded-xl border border-white/20 hover:bg-white/15"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
@@ -28,7 +30,7 @@ export function Footer() {
                 href="https://www.instagram.com/networthwars/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors bg-white/10 backdrop-blur-sm p-2 rounded-xl border border-white/20 hover:bg-white/15"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
@@ -37,7 +39,7 @@ export function Footer() {
                 href="https://github.com/adibxr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors bg-white/10 backdrop-blur-sm p-2 rounded-xl border border-white/20 hover:bg-white/15"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
@@ -66,7 +68,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://join.netowrthwars.com"
+                  href="https://join.networthwars.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"

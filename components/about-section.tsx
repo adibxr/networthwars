@@ -7,7 +7,10 @@ export function AboutSection() {
     <section id="about" className="py-16 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4">
+          <Badge
+            variant="secondary"
+            className="mb-4 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
+          >
             About Us
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-balance mb-6">Revolutionizing Finance Education</h2>
@@ -18,32 +21,32 @@ export function AboutSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          <Card className="p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift">
+            <div className="bg-primary/10 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-primary/20">
               <Users className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold mb-2">10K+</h3>
             <p className="text-muted-foreground">Active Learners</p>
           </Card>
 
-          <Card className="p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift">
+            <div className="bg-primary/10 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-primary/20">
               <BookOpen className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold mb-2">50+</h3>
             <p className="text-muted-foreground">Interactive Chapters</p>
           </Card>
 
-          <Card className="p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift">
+            <div className="bg-primary/10 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-primary/20">
               <Award className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold mb-2">95%</h3>
             <p className="text-muted-foreground">Completion Rate</p>
           </Card>
 
-          <Card className="p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift">
+            <div className="bg-primary/10 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-primary/20">
               <TrendingUp className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold mb-2">4.9/5</h3>
@@ -69,7 +72,7 @@ export function AboutSection() {
             </p>
           </div>
           <div className="relative">
-            <Card className="p-8 bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20">
+            <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 transition-all duration-300">
               <h4 className="text-2xl font-bold mb-4">What Makes Us Different</h4>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
