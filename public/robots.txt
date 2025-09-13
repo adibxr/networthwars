@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://networthwars.com/sitemap.xml
