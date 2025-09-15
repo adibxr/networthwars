@@ -15,7 +15,7 @@ export function CTASection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="text-lg px-8 py-6 animate-glow">
-              <a href="https://join.networthwars.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://join.networthwars.com/" target="_blank" rel="noopener noreferrer">
                 Start Learning Now
               </a>
             </Button>

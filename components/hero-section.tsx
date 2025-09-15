@@ -48,7 +48,7 @@ export function HeroSection() {
               asChild
               className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-white hover-lift transition-all duration-200 shadow-lg hover:shadow-xl rounded-2xl"
             >
-              <a href="https://join.networthwars.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://join.networthwars.com/" target="_blank" rel="noopener noreferrer">
                 <Zap className="mr-2 h-5 w-5" />
                 Join Now - It's Free
               </a>
