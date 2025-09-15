@@ -5,24 +5,45 @@ import { Star } from "lucide-react"
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Sarah Chen",
+      name: "Aditya Sharma",
       role: "Software Engineer",
       content:
-        "Networthwars transformed how I think about money. The gamified approach made learning about investments actually fun!",
+        "Networthwars made finance so simple! The gamified approach helped me understand mutual funds and SIPs perfectly. Now I'm confidently investing!",
       rating: 5,
     },
     {
-      name: "Michael Rodriguez",
+      name: "Raj Patel",
       role: "College Student",
       content:
-        "Finally, a finance course that doesn't put me to sleep. The daily quizzes keep me motivated and the hackathons are amazing.",
+        "Finally, a finance course that doesn't bore me to death. The daily quizzes and hackathons keep me motivated. Best investment in my education!",
       rating: 5,
     },
     {
-      name: "Emily Johnson",
+      name: "Abhinav Singh",
       role: "Marketing Manager",
       content:
-        "I went from knowing nothing about finance to confidently managing my portfolio. The chapter-based system is brilliant.",
+        "From zero financial knowledge to managing my portfolio like a pro. The chapter-based system is brilliant and easy to follow.",
+      rating: 5,
+    },
+    {
+      name: "Aksh Gupta",
+      role: "Startup Founder",
+      content:
+        "This platform transformed my understanding of business finance. The interactive lessons and real-world examples are incredibly valuable.",
+      rating: 5,
+    },
+    {
+      name: "Priya Mehta",
+      role: "Data Analyst",
+      content:
+        "Love how Networthwars breaks down complex financial concepts. The community challenges make learning fun and competitive!",
+      rating: 5,
+    },
+    {
+      name: "Arjun Kumar",
+      role: "Engineering Student",
+      content:
+        "Best decision I made was joining Networthwars. Now I understand stocks, crypto, and personal finance better than my friends!",
       rating: 5,
     },
   ]
@@ -43,12 +64,11 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            /* Updated testimonial cards with glassy rounded design */
             <Card
               key={index}
-              className="p-6 hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift"
+              className="p-6 transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2"
             >
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
