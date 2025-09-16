@@ -50,7 +50,7 @@ export function HeroSection() {
             >
               <a href="https://join.networthwars.com" target="_blank" rel="noopener noreferrer">
                 <Zap className="mr-2 h-5 w-5" />
-                Join Now - It's Free
+                Join Our Team
               </a>
             </Button>
 
@@ -62,7 +62,7 @@ export function HeroSection() {
             >
               <a href="https://docs.networthwars.com" target="_blank" rel="noopener noreferrer">
                 <BookOpen className="mr-2 h-5 w-5" />
-                Read Docs
+                Magazines (Coming Soon)
               </a>
             </Button>
           </div>

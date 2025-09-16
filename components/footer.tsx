@@ -63,7 +63,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Documentation
+                  Magazines (Coming Soon)
                 </a>
               </li>
               <li>
@@ -73,7 +73,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Join Now
+                  Join Our Mission
                 </a>
               </li>
             </ul>

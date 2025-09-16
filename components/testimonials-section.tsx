@@ -1,32 +1,6 @@
-import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Star } from "lucide-react"
 
-export function TestimonialsSection() {
-  const testimonials = [
-    {
-      name: "Sarah Chen",
-      role: "Software Engineer",
-      content:
-        "Networthwars transformed how I think about money. The gamified approach made learning about investments actually fun!",
-      rating: 5,
-    },
-    {
-      name: "Michael Rodriguez",
-      role: "College Student",
-      content:
-        "Finally, a finance course that doesn't put me to sleep. The daily quizzes keep me motivated and the hackathons are amazing.",
-      rating: 5,
-    },
-    {
-      name: "Emily Johnson",
-      role: "Marketing Manager",
-      content:
-        "I went from knowing nothing about finance to confidently managing my portfolio. The chapter-based system is brilliant.",
-      rating: 5,
-    },
-  ]
-
+export function Collab() {
   return (
     <section className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto">
@@ -35,35 +9,43 @@ export function TestimonialsSection() {
             variant="secondary"
             className="mb-4 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
           >
-            Testimonials
+            Our Collaborators
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-balance mb-6">What Our Learners Say</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-balance mb-6">Who We Work With</h2>
           <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Join thousands of satisfied learners who have transformed their financial future with Networthwars.
+            Proudly supported by leading institutions in education and technology.
           </p>
         </div>
+        
+        {/* Responsive grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
+          {/* ASOSE School */}
+          <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300">
+            <div className="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center">
+              <img 
+                className="max-w-full max-h-full object-contain" 
+                src="https://hackathon.networthwars.com/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2Fadibxr%2Fpublic%2Frefs%2Fheads%2Fmain%2Fschoollogo.png&w=256&q=75" 
+                alt="ASOSE School Logo" 
+              />
+            </div>
+            <h3 className="text-xl md:text-2xl font-semibold text-center">ASOSE School</h3>
+          </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            /* Updated testimonial cards with glassy rounded design */
-            <Card
-              key={index}
-              className="p-6 hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl hover:bg-white/15 hover-lift"
-            >
-              <div className="flex items-center mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-muted-foreground mb-4 leading-relaxed">"{testimonial.content}"</p>
-              <div>
-                <p className="font-semibold">{testimonial.name}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-              </div>
-            </Card>
-          ))}
+          {/* IHFC */}
+          <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300">
+            <div className="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center">
+              <img 
+                className="max-w-full max-h-full object-contain" 
+                src="https://hackathon.networthwars.com/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2Fadibxr%2Fpublic%2Frefs%2Fheads%2Fmain%2Fihfc.png&w=256&q=75" 
+                alt="IHFC Logo" 
+              />
+            </div>
+            <h3 className="text-xl md:text-2xl font-semibold text-center">IHFC</h3>
+          </div>
         </div>
       </div>
     </section>
   )
 }
+
+export default Collab;

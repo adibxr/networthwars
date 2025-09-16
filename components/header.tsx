@@ -29,12 +29,12 @@ export function Header() {
             </a>
             <Button variant="outline" asChild>
               <a href="https://docs.networthwars.com" target="_blank" rel="noopener noreferrer">
-                Read Docs
+                Read Magazine (Soon)
               </a>
             </Button>
             <Button asChild className="animate-glow">
               <a href="https://join.netowrthwars.com" target="_blank" rel="noopener noreferrer">
-                Join Now
+                Join Our Mission
               </a>
             </Button>
           </nav>
@@ -60,12 +60,12 @@ export function Header() {
               </a>
               <Button variant="outline" asChild className="w-full bg-transparent">
                 <a href="https://docs.networthwars.com" target="_blank" rel="noopener noreferrer">
-                  Read Docs
+                  Explore Magazines (Available Soon)
                 </a>
               </Button>
               <Button asChild className="w-full">
                 <a href="https://join.netowrthwars.com" target="_blank" rel="noopener noreferrer">
-                  Join Now
+                  Join Our Team
                 </a>
               </Button>
             </div>
